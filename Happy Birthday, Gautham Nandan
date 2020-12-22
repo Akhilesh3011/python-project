@@ -1,0 +1,20 @@
+from tkinter import *
+
+root = Tk()
+
+label_2 = Label(root, text="Happy Birthday, Gautham Nandan", bg="lime", fg="black")
+label_2.config(font=("Raleway",22))
+
+def greet():
+    label_2.pack()
+
+label = Label(root, text="Welcome, to the Greetings Application!!", bg="yellow",fg="black")
+label.config(font=("Raleway", 22))
+label.pack()
+
+btn = Button(root, text="Click me!!", bg = "lime",fg="black", width=10, height = 1, command=greet)
+btn.config(font=("Raleway", 14))
+btn.pack()
+
+
+root.mainloop()
